@@ -3,8 +3,7 @@
     <section class="flex flex-col gap-y-16">
       <div class="flex flex-col gap-4">
         <h1 class="text-3xl md:text-6xl trackin-wide">
-          <span class="font-light">Mauri</span>
-          <span class="font-bold">Nyyssönen</span>
+          <span class="font-bold">Ticorporate</span>
         </h1>
         <div class="md:text-xl tracking-wide">Software Developer 👨🏼‍💻</div>
         <p>
