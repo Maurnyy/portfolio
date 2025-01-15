@@ -192,14 +192,14 @@
             >
             <img
               class="mt-4"
-              src="../src/lib/assets/project_TS.png"
+              src="../static/assets/project_TS.png"
               alt="Project template Typescript"
             />
 
             <p>Kuva 1. Lähetettävän datan alustaminen ja lähettäminen</p>
             <br />
             <img
-              src="../src/lib/assets/project_checkbox.png"
+              src="../static/assets/project_checkbox.png"
               alt="Project template checkbox"
             />
             <p>
@@ -208,7 +208,7 @@
             </p>
             <br />
 
-            <img src="../src/lib/assets/project.png" alt="Project template" />
+            <img src="../static/assets/project.png" alt="Project template" />
 
             <p>Kuva 3. Templaatin ulkonäkö verkkosivuilla</p>
           {/if}
@@ -224,26 +224,26 @@
             >
             <img
               class="mt-4"
-              src="../src/lib/assets/backend_addForumPost.png"
+              src="../static/assets/backend_addForumPost.png"
               alt="Add new forum post"
             />
             <p>Kuva 1. Forum postauksen lisäys backend</p>
             <br />
             <img
-              src="../src/lib/assets/frontend_ForumPost.png"
+              src="../static/assets/frontend_ForumPost.png"
               alt="Add forum post frontend"
             />
             <p>Kuva 2. Forum postauksen lisäys frontin puolella</p>
             <br />
 
             <img
-              src="../src/lib/assets/backend_ForumPostDelete.png"
+              src="../static/assets/backend_ForumPostDelete.png"
               alt="Delete new forum post"
             />
             <p>Kuva 3. Forum postauksen poisto</p>
             <br />
             <img
-              src="../src/lib/assets/forum_interface.png"
+              src="../static/assets/forum_interface.png"
               alt="Forum interface"
             />
             <p>Kuva 4. Forum postauksen interface</p>
@@ -255,7 +255,7 @@
           {#if visibleNotify}
             <img
               class="mt-4"
-              src="../src/lib/assets/notifikaation_lahetys.png"
+              src="../static/assets/notifikaation_lahetys.png"
               alt="sending notification"
             />
             <p>
@@ -264,7 +264,7 @@
             </p>
             <br />
             <img
-              src="../src/lib/assets/Notification_markAsRead.png"
+              src="../static/assets/Notification_markAsRead.png"
               alt="sending notification"
             />
             <p>
@@ -274,13 +274,13 @@
             <br />
 
             <img
-              src="../src/lib/assets/notification_new.png"
+              src="../static/assets/notification_new.png"
               alt="New notification"
             />
             <p>Kuva 3. Uusi notifikaatio</p>
             <br />
             <img
-              src="../src/lib/assets/notification_read.png"
+              src="../static/assets/notification_read.png"
               alt="Notification read"
             />
             <p>Kuva 4. Luettu notifikaatio</p>
