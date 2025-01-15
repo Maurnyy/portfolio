@@ -117,7 +117,7 @@
           </h2>
           <p>
             <strong>En osannut odottaa projektilta mitään</strong> ja aiempi
-            kokemus projekti työskentelyltä oli koulun ryhmäraportit ja viikon
+            kokemus projektityöskentelyltä oli koulun ryhmäraportit ja viikon
             mittainen IT-projekti Software Engineer opintojaksolla. Minulla ei
             ollut myöskään kokemusta <strong>Scrumista</strong>, vaikka tiesin
             kyseisen metodin ja sitä oltiin opiskeltu Software Engineer
