@@ -192,14 +192,14 @@
             >
             <img
               class="mt-4"
-              src="../static/assets/project_TS.png"
+              src="/assets/project_TS.png"
               alt="Project template Typescript"
             />
 
             <p>Kuva 1. Lähetettävän datan alustaminen ja lähettäminen</p>
             <br />
             <img
-              src="../static/assets/project_checkbox.png"
+              src="/assets/project_checkbox.png"
               alt="Project template checkbox"
             />
             <p>
@@ -208,7 +208,7 @@
             </p>
             <br />
 
-            <img src="../static/assets/project.png" alt="Project template" />
+            <img src="/assets/project.png" alt="Project template" />
 
             <p>Kuva 3. Templaatin ulkonäkö verkkosivuilla</p>
           {/if}
@@ -224,28 +224,25 @@
             >
             <img
               class="mt-4"
-              src="../static/assets/backend_addForumPost.png"
+              src="/assets/backend_addForumPost.png"
               alt="Add new forum post"
             />
             <p>Kuva 1. Forum postauksen lisäys backend</p>
             <br />
             <img
-              src="../static/assets/frontend_ForumPost.png"
+              src="/assets/frontend_ForumPost.png"
               alt="Add forum post frontend"
             />
             <p>Kuva 2. Forum postauksen lisäys frontin puolella</p>
             <br />
 
             <img
-              src="../static/assets/backend_ForumPostDelete.png"
+              src="/assets/backend_ForumPostDelete.png"
               alt="Delete new forum post"
             />
             <p>Kuva 3. Forum postauksen poisto</p>
             <br />
-            <img
-              src="../static/assets/forum_interface.png"
-              alt="Forum interface"
-            />
+            <img src="/assets/forum_interface.png" alt="Forum interface" />
             <p>Kuva 4. Forum postauksen interface</p>
           {/if}
           <button
@@ -255,7 +252,7 @@
           {#if visibleNotify}
             <img
               class="mt-4"
-              src="../static/assets/notifikaation_lahetys.png"
+              src="/assets/notifikaation_lahetys.png"
               alt="sending notification"
             />
             <p>
@@ -264,7 +261,7 @@
             </p>
             <br />
             <img
-              src="../static/assets/Notification_markAsRead.png"
+              src="/assets/Notification_markAsRead.png"
               alt="sending notification"
             />
             <p>
@@ -273,16 +270,10 @@
             </p>
             <br />
 
-            <img
-              src="../static/assets/notification_new.png"
-              alt="New notification"
-            />
+            <img src="/assets/notification_new.png" alt="New notification" />
             <p>Kuva 3. Uusi notifikaatio</p>
             <br />
-            <img
-              src="../static/assets/notification_read.png"
-              alt="Notification read"
-            />
+            <img src="/assets/notification_read.png" alt="Notification read" />
             <p>Kuva 4. Luettu notifikaatio</p>
           {/if}
         </div>
