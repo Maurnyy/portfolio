@@ -3,7 +3,7 @@
   let visibleForum = false;
   let visibleNotify = false;
 
-  function toggleVissible() {
+  function toggleVisible() {
     visible = !visible;
     if (visibleForum || visibleNotify) {
       if (visibleForum) {
@@ -13,7 +13,7 @@
       }
     }
   }
-  function toggleVissibleForum() {
+  function toggleVisibleForum() {
     visibleForum = !visibleForum;
     if (visible || visibleNotify) {
       if (visible) {
@@ -23,7 +23,7 @@
       }
     }
   }
-  function toggleVissibleNotify() {
+  function toggleVisibleNotify() {
     visibleNotify = !visibleNotify;
     if (visible || visibleForum) {
       if (visible) {
@@ -73,7 +73,7 @@
           Olin osa kuuden hengen ryhmää, ja roolini oli toimia <strong
             >Fullstack-kehittäjänä</strong
           >, <strong>Product Ownerina</strong> ja vastata
-          <strong>liiketalous suunnitelmasta</strong>.
+          <strong>liiketalouden suunnitelmasta</strong>.
         </p>
         <br />
         <p><strong>Sovelluksen tavoitteet:</strong></p>
@@ -105,9 +105,9 @@
           </h2>
           <p>
             <strong>Kurssin alussa saimme tehtäväksi suunnitella</strong> mahdollinen
-            sovellusidea pareittain. Minun alkuperäinen idea oli suunnitella ERP-sovellus
+            sovellusidea pareittain. Minun alkuperäinen ideani oli suunnitella ERP-sovellus
             rakennusalalle. Vaikka minulla oli intoa lähteä suunnittelemaan ERP-sovellusta
-            ja selkeä visio siihen, niin koin, että oppimisen kannalta olisi järkeveämpi
+            ja selkeä visio siihen, niin koin, että oppimisen kannalta olisi järkevämpi
             hakea asiakasprojektiin.
           </p>
         </div>
@@ -127,11 +127,11 @@
           <p>
             <strong>Alunperin minun piti toimia projektissa</strong> pelkästään
             <strong>Fullstack-kehittäjänä</strong>
-            ja liiketalous osaajana. Olimme keskustelleet ryhmän kanssa Product Ownerin
+            ja liiketalous-osaajana. Olimme keskustelleet ryhmän kanssa Product Ownerin
             roolin valitsemisesta ja tarkoituksena oli valita se vasta ensimmäisen
             yhteisen palaverin jälkeen, mutta Aleksi oli kuullut väärin ja esitteli
             minut <strong>Product Ownerina</strong> Elisalle. Vaikka sain roolin
-            vahingossa, niin koin selviäväni siitä maaliin. Kurssin alussa en asettanut
+            vahingossa, niin koin selviytyväni siitä maaliin. Kurssin alussa en asettanut
             itselleni liiketalouden osalta mitään tavoitteita, mutta halusin kehittyä
             paremmaksi koodariksi.
           </p>
@@ -151,7 +151,7 @@
             tutkimaan oppilaitoksen ja Elisan tarpeita. Käytimme n. 2 viikkoa
             aikaa haastatteluihin, suunnitteluun ja ux karvalankamallin
             rakentamiseen. Tässä vaiheessa olin oman mukavuusalueen ulkopuolella
-            ja tuntui, että olen hieman hukassa projektin kanssa. Kuitenkin mitä
+            ja tuntui, että olin hieman hukassa projektin kanssa. Kuitenkin mitä
             pidemmälle saimme suunniteltua projektia, niin sitä vahvemmaksi tuli
             visio siitä miten se voitaisiin toteuttaa.
           </p>
@@ -161,7 +161,7 @@
             rakentamaan tietokantaa ja ottaa vastuulle lomakkeen rakentamisen
             frontin ja backendin puolella. Backendin osalta lähdimme
             liikenteeseen sillä, että AD rakenti Node Expressin pohjan ja minä
-            lähdin suunnittelemaan miten Mongo tietokanta toteutettaisiin
+            lähdin suunnittelemaan miten Mongo-tietokanta toteutettaisiin
             lomakkeen osalta.
           </p>
         </div>
@@ -179,16 +179,18 @@
         <div>
           <button
             class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
-            on:click={toggleVissible}>Template esimerkki</button
+            on:click={toggleVisible}>Laajenna Template esimerkki</button
           >
           {#if visible}
             <button
               class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
-              on:click={toggleVissibleForum}>Forum post esimerkki</button
+              on:click={toggleVisibleForum}
+              >Laajenna Forum post esimerkki</button
             >
             <button
               class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
-              on:click={toggleVissibleNotify}>Notifikaatio esimerkki</button
+              on:click={toggleVisibleNotify}
+              >Laajenna Notifikaatio esimerkki</button
             >
             <img
               class="mt-4"
@@ -215,12 +217,13 @@
 
           <button
             class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
-            on:click={toggleVissibleForum}>Forum post esimerkki</button
+            on:click={toggleVisibleForum}>Laajenna Forum post esimerkki</button
           >
           {#if visibleForum}
             <button
               class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
-              on:click={toggleVissibleNotify}>Notifikaatio esimerkki</button
+              on:click={toggleVisibleNotify}
+              >Laajenna Notifikaatio esimerkki</button
             >
             <img
               class="mt-4"
@@ -247,7 +250,8 @@
           {/if}
           <button
             class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
-            on:click={toggleVissibleNotify}>Notifikaatio esimerkki</button
+            on:click={toggleVisibleNotify}
+            >Laajenna Notifikaatio esimerkki</button
           >
           {#if visibleNotify}
             <img
@@ -293,7 +297,7 @@
           <strong>Ticorporaten aikana suurimmat kehitykset</strong> tulivat ongelmanratkaisussa,
           Githubin käytössä ja projektityöskentelyssä. Opin myös, että ei kannata
           jäädä tutkimaan yhtä ongelmaa liian pitkäksi aikaa, vaan hypätä seuraavaan
-          asiaan ja palata myöhemmin kyseiseen ongelmaan tuoreilla avoilla.
+          asiaan ja palata myöhemmin kyseiseen ongelmaan tuoreilla aivoilla.
         </p>
         <br />
         <h1 class="font-bold text-2xl">Itsereflektio</h1>
@@ -304,20 +308,20 @@
           alkuun, mutta jouduinkin suunnittelemaan sovelluksen sisältöä.
           Kuitenkin jälkeenpäin ajateltuna sovelluksen suunnittelu loi minulle
           pohjan ja selkeän vision sovelluksen rakentamiseen. Koin myös
-          hyödyllisenä sen, että aloitimme päivän 15-minuutin palaverilla, jossa
-          kävimme ryhmänkesken läpi mitä kukin tekee päivän aikana.
+          hyödyllisenä sen, että aloitimme päivän 15 minuutin palaverilla, jossa
+          kävimme ryhmän kesken läpi mitä kukin tekee päivän aikana.
           <strong>Elisa</strong> tuki myös valtavasti projektia, sillä he osallistuivat
           muutamaa päivää lukuunottamatta jokaiseen Scrum-tapaamiseen ja suunnitteluun.
         </p>
         <br />
         <p>
-          <strong>Opin valtavasti Product Owner työssä</strong>, vaikka olin
+          <strong>Opin valtavasti Product ownerin työssä</strong>, vaikka olin
           alussa lähinnä kuuntelijan roolissa. Elisa onneksi tuki tässä
           työtehtävässä valtavasti ja opetti kuinka backlog kannattaa rakentaa.
         </p>
         <br />
         <p>
-          <strong>Ohjelmoinissa pystyin hyödyntämään</strong> esimerkiksi Frontend-sovelluskehityksen
+          <strong>Ohjelmoinnissa pystyin hyödyntämään</strong> esimerkiksi Frontend-sovelluskehityksen
           ja Backend 1 -kurssilla opittuja asioita esimerkiksi lomakkeiden käytössä.
           Vaikka ohjelmoinnissa ei tullutkaan suoraan mitään täysin uutta, ongelmanratkaisutaidot
           kehittyivät huomattavasti. Alussa valitsimme Flowbite UI kirjaston, sillä
@@ -348,8 +352,8 @@
           > ja mielestäni hoidin oman osuuteni esimerkillisesti. Olen tyytyväinen
           opittuihin asioihin vaikka koodin tasolla ei aina ollut kauneinta. Ticorporate
           vahvisti ajatuksiani siitä, mitä haluan tehdä työkseni, ja ymmärsin, että
-          tarvitsen lisää kokemusta kasvaakseni paremmaksi ohjelmoijaksi. Koen, että
-          minulla on vahvuus tietokannoissa.
+          tarvitsen lisää kokemusta kasvaakseni paremmaksi ohjelmoijaksi. Koen vahvuuteni
+          olevan tietokannoissa.
         </p>
       </div>
       <div
