@@ -82,9 +82,6 @@
         </a>
         <a href="mailto:mauri.nyyssonen@live.fi">mauri.nyyssonen@live.fi</a>
       </div>
-   <a href="https://www.samulivalimaki.com" class="underline"
-          >UI designed by Samuli Välimäki</a
-        >
     </section>
   </div>
 </div>
