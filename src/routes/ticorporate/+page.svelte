@@ -1,3 +1,40 @@
+<script>
+  let visible = false;
+  let visibleForum = false;
+  let visibleNotify = false;
+
+  function toggleVissible() {
+    visible = !visible;
+    if (visibleForum || visibleNotify) {
+      if (visibleForum) {
+        visibleForum = !visibleForum;
+      } else {
+        visibleNotify = !visibleNotify;
+      }
+    }
+  }
+  function toggleVissibleForum() {
+    visibleForum = !visibleForum;
+    if (visible || visibleNotify) {
+      if (visible) {
+        visible = !visible;
+      } else {
+        visibleNotify = !visibleNotify;
+      }
+    }
+  }
+  function toggleVissibleNotify() {
+    visibleNotify = !visibleNotify;
+    if (visible || visibleForum) {
+      if (visible) {
+        visible = !visible;
+      } else {
+        visibleForum = !visibleForum;
+      }
+    }
+  }
+</script>
+
 <div class="ml-20">
   <div class="flex flex-col gap-y-36 max-w-5x1 mx-auto px-4 my-24 print:my-0">
     <section class="flex flex-col gap-y-16">
@@ -5,7 +42,7 @@
         <h1 class="text-3xl md:text-6xl trackin-wide">
           <span class="font-bold">Ticorporate</span>
         </h1>
-        <div class="md:text-xl tracking-wide">Software Developer 👨🏼‍💻</div>
+        <div class="md:text-xl tracking-wide">Project Elli</div>
         <p>
           <span class="font-bold mr-6 underline">
             <a href="/">Etusivu</a>
@@ -18,32 +55,311 @@
       <div
         class="leading-loose [&amp;_a]:font-bold [&amp;_a]:underline font-mono"
       >
-        <p>
-          Olen <strong>JAMK Tietojenkäsittely</strong> opiskelija Jyväskylästä. Opinnoissa
-          olen keskittynyt Fullstack-opintoihin.
-        </p>
-      </div>
-      <div>
         <h2
           class="font-bold text-purple-500 text-3xl bg-clip-text fill-transparent bg-gradient-to-tl from-blue-500 to-red-500 mr-2 mb-4"
           style="-webkit-text-fill-color: transparent"
         >
-          Skills
+          Projektin yleiskuva
         </h2>
-        <div class="flex flex-col md:flex-row gap-8 flex-wrap">
-          <div class="flex flex-col gap-1">
-            <div class="font-bold">Angular, Svelte</div>
-            <div class="font-light">SvelteKit</div>
-          </div>
-          <div class="flex flex-col gap-1">
-            <div class="font-bold">NodeJS</div>
-            <div class="font-light">Express</div>
-          </div>
-          <div class="flex flex-col gap-1">
-            <div class="font-bold">Databases</div>
-            <div class="font-light">SQL, NoSQL</div>
-          </div>
+        <p>
+          <strong>Projekti Elli</strong> on toimeksianto Elisalta, jossa rakennetaan
+          alusta Elisan ja Jamkin väliselle yhteistyölle. Alustan tarkoituksena on
+          parantaa kommunikaatiota ja läpinäkyvyyttä mahdollisten organisaatioiden
+          yhteistöiden välillä. Projekti kesti noin 4 kuukautta ja siihen oli käytettävissä
+          450 tuntia per ryhmän jäsen.
+        </p>
+        <br />
+        <p>
+          Olin osa kuuden hengen ryhmää, ja roolini oli toimia <strong
+            >Fullstack-kehittäjänä</strong
+          >, <strong>Product Ownerina</strong> ja vastata
+          <strong>liiketalous suunnitelmasta</strong>.
+        </p>
+        <br />
+        <p><strong>Sovelluksen tavoitteet:</strong></p>
+        <p>
+          <strong>Sovelluksessa osapuolten tulee nähdä vuosinäkymä</strong>,
+          jossa on ilmoituksia mahdollisista projektiyhteistöistä. Osapuolten
+          tulee pystyä lisäämään uusia projektiyhteistöitä ja muokkaamaan omia
+          postauksiaan. Lisäksi sovelluksen käyttäjien tulee pystyä kirjautumaan
+          sovellukseen ja siitä ulos. Sovelluksen tulee täyttää WCAG 2.2
+          saavutettavuusvaatimukset. Sovelluksen tulee pyöriä
+          AWS-pilviympäristössä, olla korkeasti käytettävä ja testattu.
+          Sovelluksessa tulee olla peruskäyttäjän lisäksi pääkäyttäjän rooli,
+          joka pystyy hallinnoimaan muita käyttäjiä.
+        </p>
+      </div>
+      <div
+        class="leading-loose [&amp;_a]:font-bold [&amp;_a]:underline font-mono"
+      >
+        <h2
+          class="font-bold text-purple-500 text-3xl bg-clip-text fill-transparent bg-gradient-to-tl from-blue-500 to-red-500 mr-2 mb-4"
+          style="-webkit-text-fill-color: transparent"
+        >
+          Projektin aloitus ja lähtökohdat
+        </h2>
+
+        <div>
+          <h2 class="font-bold text-1xl bg-clip-text mr-2 mt-8">
+            Ennen projektia:
+          </h2>
+          <p>
+            <strong>Kurssin alussa saimme tehtäväksi suunnitella</strong> mahdollinen
+            sovellusidea pareittain. Minun alkuperäinen idea oli suunnitella ERP-sovellus
+            rakennusalalle. Vaikka minulla oli intoa lähteä suunnittelemaan ERP-sovellusta
+            ja selkeä visio siihen, niin koin, että oppimisen kannalta olisi järkeveämpi
+            hakea asiakasprojektiin.
+          </p>
         </div>
+        <div>
+          <h2 class="font-bold text-1xl bg-clip-text mr-2 mt-8">
+            Lähtökohdat:
+          </h2>
+          <p>
+            <strong>En osannut odottaa projektilta mitään</strong> ja aiempi
+            kokemus projekti työskentelyltä oli koulun ryhmäraportit ja viikon
+            mittainen IT-projekti Software Engineer opintojaksolla. Minulla ei
+            ollut myöskään kokemusta <strong>Scrumista</strong>, vaikka tiesin
+            kyseisen metodin ja sitä oltiin opiskeltu Software Engineer
+            opintojaksolla.
+          </p>
+          <br />
+          <p>
+            <strong>Alunperin minun piti toimia projektissa</strong> pelkästään
+            <strong>Fullstack-kehittäjänä</strong>
+            ja liiketalous osaajana. Olimme keskustelleet ryhmän kanssa Product Ownerin
+            roolin valitsemisesta ja tarkoituksena oli valita se vasta ensimmäisen
+            yhteisen palaverin jälkeen, mutta Aleksi oli kuullut väärin ja esitteli
+            minut <strong>Product Ownerina</strong> Elisalle. Vaikka sain roolin
+            vahingossa, niin koin selviäväni siitä maaliin. Kurssin alussa en asettanut
+            itselleni liiketalouden osalta mitään tavoitteita, mutta halusin kehittyä
+            paremmaksi koodariksi.
+          </p>
+          <br />
+          <p>
+            <strong>Ryhmällämme</strong> ei ollut aluksi minkäänlaista visiota
+            projektin toteutuksesta, mutta koimme, että haluamme toteuttaa
+            sovelluksen <strong>Angularilla</strong>, sillä meillä oli vahvin
+            osaaminen siihen. Halusimme kuitenkin kokeilla jotain uutta, joten
+            valitsimme Standalonen. Aiemmat projektit olimme toteuttaneet
+            no-standalonena.
+          </p>
+          <br />
+          <p><strong>Projekti Ellin aloitus:</strong></p>
+          <p>
+            <strong>Projekti lähti liikkeelle siitä</strong>, että lähdimme
+            tutkimaan oppilaitoksen ja Elisan tarpeita. Käytimme n. 2 viikkoa
+            aikaa haastatteluihin, suunnitteluun ja ux karvalankamallin
+            rakentamiseen. Tässä vaiheessa olin oman mukavuusalueen ulkopuolella
+            ja tuntui, että olen hieman hukassa projektin kanssa. Kuitenkin mitä
+            pidemmälle saimme suunniteltua projektia, niin sitä vahvemmaksi tuli
+            visio siitä miten se voitaisiin toteuttaa.
+          </p>
+          <br />
+          <p>
+            <strong>Koin projektin alussa</strong>, että haluan lähteä vahvasti
+            rakentamaan tietokantaa ja ottaa vastuulle lomakkeen rakentamisen
+            frontin ja backendin puolella. Backendin osalta lähdimme
+            liikenteeseen sillä, että AD rakenti Node Expressin pohjan ja minä
+            lähdin suunnittelemaan miten Mongo tietokanta toteutettaisiin
+            lomakkeen osalta.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="leading-loose [&amp;_a]:font-bold [&amp;_a]:underline font-mono"
+      >
+        <h2
+          class="font-bold text-purple-500 text-3xl bg-clip-text fill-transparent bg-gradient-to-tl from-blue-500 to-red-500 mr-2 mb-4"
+          style="-webkit-text-fill-color: transparent"
+        >
+          Projektin aikainen toteutus
+        </h2>
+        <div>
+          <button
+            class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
+            on:click={toggleVissible}>Template esimerkki</button
+          >
+          {#if visible}
+            <button
+              class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
+              on:click={toggleVissibleForum}>Forum post esimerkki</button
+            >
+            <button
+              class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
+              on:click={toggleVissibleNotify}>Notifikaatio esimerkki</button
+            >
+            <img
+              class="mt-4"
+              src="../src/lib/assets/project_TS.png"
+              alt="Project template Typescript"
+            />
+
+            <p>Kuva 1. Lähetettävän datan alustaminen ja lähettäminen</p>
+            <br />
+            <img
+              src="../src/lib/assets/project_checkbox.png"
+              alt="Project template checkbox"
+            />
+            <p>
+              Kuva 2. Checkbox tarkistus, että onko klikattu ja klikattujen
+              arvon muuttaminen trueksi.
+            </p>
+            <br />
+
+            <img src="../src/lib/assets/project.png" alt="Project template" />
+
+            <p>Kuva 3. Templaatin ulkonäkö verkkosivuilla</p>
+          {/if}
+
+          <button
+            class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
+            on:click={toggleVissibleForum}>Forum post esimerkki</button
+          >
+          {#if visibleForum}
+            <button
+              class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
+              on:click={toggleVissibleNotify}>Notifikaatio esimerkki</button
+            >
+            <img
+              class="mt-4"
+              src="../src/lib/assets/backend_addForumPost.png"
+              alt="Add new forum post"
+            />
+            <p>Kuva 1. Forum postauksen lisäys backend</p>
+            <br />
+            <img
+              src="../src/lib/assets/frontend_ForumPost.png"
+              alt="Add forum post frontend"
+            />
+            <p>Kuva 2. Forum postauksen lisäys frontin puolella</p>
+            <br />
+
+            <img
+              src="../src/lib/assets/backend_ForumPostDelete.png"
+              alt="Delete new forum post"
+            />
+            <p>Kuva 3. Forum postauksen poisto</p>
+            <br />
+            <img
+              src="../src/lib/assets/forum_interface.png"
+              alt="Forum interface"
+            />
+            <p>Kuva 4. Forum postauksen interface</p>
+          {/if}
+          <button
+            class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
+            on:click={toggleVissibleNotify}>Notifikaatio esimerkki</button
+          >
+          {#if visibleNotify}
+            <img
+              class="mt-4"
+              src="../src/lib/assets/notifikaation_lahetys.png"
+              alt="sending notification"
+            />
+            <p>
+              Kuva 1. Haetaan kaikkien kommentoijien ja postauksen tekijän id ja
+              lähetetään tietokantaan.
+            </p>
+            <br />
+            <img
+              src="../src/lib/assets/Notification_markAsRead.png"
+              alt="sending notification"
+            />
+            <p>
+              Kuva 2. Notifikaation merkkaus luetuksi, navikointi ja ajan
+              formatointi.
+            </p>
+            <br />
+
+            <img
+              src="../src/lib/assets/notification_new.png"
+              alt="New notification"
+            />
+            <p>Kuva 3. Uusi notifikaatio</p>
+            <br />
+            <img
+              src="../src/lib/assets/notification_read.png"
+              alt="Notification read"
+            />
+            <p>Kuva 4. Luettu notifikaatio</p>
+          {/if}
+        </div>
+      </div>
+
+      <div
+        class="leading-loose [&amp;_a]:font-bold [&amp;_a]:underline font-mono"
+      >
+        <h2
+          class="font-bold text-purple-500 text-3xl bg-clip-text fill-transparent bg-gradient-to-tl from-blue-500 to-red-500 mr-2 mb-4"
+          style="-webkit-text-fill-color: transparent"
+        >
+          Projektin jälkeen
+        </h2>
+        <h1 class="font-bold text-2xl">Opitut asiat</h1>
+        <p>
+          <strong>Ticorporaten aikana suurimmat kehitykset</strong> tulivat ongelmanratkaisussa,
+          Githubin käytössä ja projektityöskentelyssä. Opin myös, että ei kannata
+          jäädä tutkimaan yhtä ongelmaa liian pitkäksi aikaa, vaan hypätä seuraavaan
+          asiaan ja palata myöhemmin kyseiseen ongelmaan tuoreilla avoilla.
+        </p>
+        <br />
+        <h1 class="font-bold text-2xl">Itsereflektio</h1>
+        <p>
+          <strong>Ticorporate-työpanokseni tuntimääräisesti</strong> oli noin
+          450 työtuntia mukaanlukien portfolion rakentaminen. Projektin alussa
+          jouduin heti epämukavuusalueella, kun odotin pääseväni koodaaman heti
+          alkuun, mutta jouduinkin suunnittelemaan sovelluksen sisältöä.
+          Kuitenkin jälkeenpäin ajateltuna sovelluksen suunnittelu loi minulle
+          pohjan ja selkeän vision sovelluksen rakentamiseen. Koin myös
+          hyödyllisenä sen, että aloitimme päivän 15-minuutin palaverilla, jossa
+          kävimme ryhmänkesken läpi mitä kukin tekee päivän aikana.
+          <strong>Elisa</strong> tuki myös valtavasti projektia, sillä he osallistuivat
+          muutamaa päivää lukuunottamatta jokaiseen Scrum-tapaamiseen ja suunnitteluun.
+        </p>
+        <br />
+        <p>
+          <strong>Opin valtavasti Product Owner työssä</strong>, vaikka olin
+          alussa lähinnä kuuntelijan roolissa. Elisa onneksi tuki tässä
+          työtehtävässä valtavasti ja opetti kuinka backlog kannattaa rakentaa.
+        </p>
+        <br />
+        <p>
+          <strong>Ohjelmoinissa pystyin hyödyntämään</strong> esimerkiksi Frontend-sovelluskehityksen
+          ja Backend 1 -kurssilla opittuja asioita esimerkiksi lomakkeiden käytössä.
+          Vaikka ohjelmoinnissa ei tullutkaan suoraan mitään täysin uutta, ongelmanratkaisutaidot
+          kehittyivät huomattavasti. Alussa valitsimme Flowbite UI kirjaston, sillä
+          sen avulla pystyisimme rakentamaan Datepickerin ja kalenterin helposti.
+          Kuitenkin tässä vaiheessa minulla ei ollut riittävää osaamista näkemään,
+          että ongelma saattaa olla jossain muualla kuin omassa koodissa. Lähtökohtaisesti
+          ajattelin, että oma koodi oli viallinen, kun valitsin kalenterista päivän
+          18.1.2025, mutta se tallentui tietokantaan lähetyshetken päivämääränä.
+          Kamppailin ongelman kanssa muutaman viikon ja myös eräällä ryhmäläisellä
+          oli samanlaisia haasteita. Päätimme lopulta yhdessä vaihtaa kirjastoksi
+          Angular Materials. Angular Materials vaihdon jälkeen datepicker toimi ja
+          ei tarvinnut tehdä muutoksia omaan koodiin. Olin siis tehnyt "turhaa" työtä,
+          mutta tämän turhan työn ansiosta opin lukemaan paremmin koodia.
+        </p>
+        <br />
+        <p>
+          <strong>Uutena asiana tuli notifikaation rakentaminen.</strong> Yritin
+          etsiä netistä tietoa, että miten voisin rakentaa sen ja yritin myös kysyä
+          ChatGPT:ltä, mutta en löytänyt mitään tietoa siitä. Tämän jälkeen rupesin
+          pohtimaan miten käyttäjä saa ilmoituksen ja mitä tapahtuu, kun se saa ilmoituksen.
+          Tästä opin ajattelemaan asioita tietokanta näkökulmasta, sekä sen, että
+          isot kokonaisuudet on hyvä pilkkoa pieniin osiin ja ratkaista vasta sen
+          jälkeen.
+        </p>
+        <br />
+        <p>
+          <strong>Olen hyvin tyytyväinen omaan panokseeni Ticorporatessa</strong
+          > ja mielestäni hoidin oman osuuteni esimerkillisesti. Olen tyytyväinen
+          opittuihin asioihin vaikka koodin tasolla ei aina ollut kauneinta. Ticorporate
+          vahvisti ajatuksiani siitä, mitä haluan tehdä työkseni, ja ymmärsin, että
+          tarvitsen lisää kokemusta kasvaakseni paremmaksi ohjelmoijaksi. Koen, että
+          minulla on vahvuus tietokannoissa.
+        </p>
       </div>
       <div
         class="flex flex-row gap-2 justify-center md:justify-start [&amp;_a]:p-2"

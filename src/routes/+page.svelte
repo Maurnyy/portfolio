@@ -20,8 +20,8 @@
         class="leading-loose [&amp;_a]:font-bold [&amp;_a]:underline font-mono"
       >
         <p>
-          Olen <strong>JAMK Tietojenkäsittely</strong> opiskelija Jyväskylästä. Opinnoissa
-          olen keskittynyt Fullstack-opintoihin.
+          Opiskelen <strong>Tietojenkäsittelyä</strong> Jyväskylän ammattikorkeakoulussa.
+          Opinnoissa olen keskittynyt Fullstack-opintoihin.
         </p>
       </div>
       <div>
