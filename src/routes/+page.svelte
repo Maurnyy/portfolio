@@ -20,7 +20,7 @@
         class="leading-loose [&amp;_a]:font-bold [&amp;_a]:underline font-mono"
       >
         <p>
-          Opiskelen <strong>Tietojenkäsittelyä</strong> Jyväskylän ammattikorkeakoulussa.
+          Opiskelen kolmatta vuotta <strong>Tietojenkäsittelyä</strong> Jyväskylän ammattikorkeakoulussa.
           Opinnoissa olen keskittynyt Fullstack-opintoihin.
         </p>
       </div>
@@ -82,6 +82,9 @@
         </a>
         <a href="mailto:mauri.nyyssonen@live.fi">mauri.nyyssonen@live.fi</a>
       </div>
+   <a href="https://www.samulivalimaki.com" class="underline"
+          >UI designed by Samuli Välimäki</a
+        >
     </section>
   </div>
 </div>
