@@ -1,4 +1,4 @@
-<div class="ml-20">
+<div class="mx-10">
   <div class="flex flex-col gap-y-36 max-w-5x1 mx-auto px-4 my-24 print:my-0">
     <section class="flex flex-col gap-y-16">
       <div class="flex flex-col gap-4">
