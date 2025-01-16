@@ -201,7 +201,7 @@
               <button
                 class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
                 on:click={toggleVisibleBusiness}
-                >Laajenna Business esimerkki</button
+                >Laajenna Business canvas</button
               >
               <img
                 class="mt-4"
@@ -240,7 +240,7 @@
               <button
                 class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
                 on:click={toggleVisibleBusiness}
-                >Laajenna Business esimerkki</button
+                >Laajenna Business canvas</button
               >
               <img
                 class="mt-4"
@@ -274,7 +274,7 @@
               <button
                 class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
                 on:click={toggleVisibleBusiness}
-                >Laajenna Business esimerkki</button
+                >Laajenna Business canvas</button
               >
               <img
                 class="mt-4"
@@ -308,7 +308,7 @@
             <button
               class="btn btn-outline bg-gradient-to-tl from-blue-500 to-red-500 text-white"
               on:click={toggleVisibleBusiness}
-              >Laajenna Business esimerkki</button
+              >Laajenna Business canvas</button
             >
             {#if visibleBusiness}
               <img src="/assets/businessCanvas.png" alt="Business Canvas" />
